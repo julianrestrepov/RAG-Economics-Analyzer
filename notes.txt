@@ -1,0 +1,45 @@
+financial_rag_project/
+│
+├── data/
+│   ├── raw/                  # PDFs, CSVs, JSON from sources
+│   ├── processed/            # Cleaned text chunks, embeddings
+│   └── metadata/             # Source info, dates, IDs
+│
+├── src/
+│   ├── loaders/              # PDF, CSV, API loaders
+│   │   └── pdf_loader.py
+│   │   └── csv_loader.py
+│   │   └── api_loader.py
+│   │
+│   ├── preprocessing/        # Text cleaning, chunking
+│   │   └── text_splitter.py
+│   │   └── clean_text.py
+│   │
+│   ├── embeddings/           # Embedding generation & FAISS index
+│   │   └── vectorstore.py
+│   │
+│   ├── retrieval/            # Query, search functions
+│   │   └── rag_retriever.py
+│   │
+│   ├── llm/                  # LLM prompts, chaining
+│   │   └── llm_prompt.py
+│   │
+│   └── utils/                # Logging, config, helper functions
+│       └── logger.py
+│       └── config.py
+│
+├── notebooks/
+│   └── demo.ipynb            # Interactive demo, testing queries
+│
+├── app/
+│   └── streamlit_app.py      # Simple UI
+│
+├── requirements.txt
+├── README.md
+└── config.env                # API keys, secrets (load with dotenv)
+
+
+Ideas:
+- Query translation
+- Make testing feature within UI
+- Be more graphic about how parameters change the model response

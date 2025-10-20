@@ -1,0 +1,194 @@
+[
+  {
+    "page_content": "date:2024-09-30\nsymbol:AAPL\nreportedCurrency:USD\ncik:0000320193\nfilingDate:2024-11-01\nacceptedDate:2024-11-01 06:01:36\nfiscalYear:2024\nperiod:FY\nrevenue:391035000000\ncostOfRevenue:210352000000\ngrossProfit:180683000000\nresearchAndDevelopmentExpenses:31370000000\ngeneralAndAdministrativeExpenses:0\nsellingAndMarketingExpenses:0\nsellingGeneralAndAdministrativeExpenses:26097000000\notherExpenses:0\noperatingExpenses:57467000000\ncostAndExpenses:267819000000\nnetInterestIncome:0\ninterestIncome:0\ninterestExpense:0\ndepreciationAndAmortization:11445000000\nebitda:134661000000\nebit:123216000000\nnonOperatingIncomeExcludingInterest:0\noperatingIncome:123216000000\ntotalOtherIncomeExpensesNet:269000000\nincomeBeforeTax:123485000000\nincomeTaxExpense:29749000000\nnetIncomeFromContinuingOperations:93736000000\nnetIncomeFromDiscontinuedOperations:0\notherAdjustmentsToNetIncome:0\nnetIncome:93736000000\nnetIncomeDeductions:0\nbottomLineNetIncome:93736000000\neps:6.11\nepsDiluted:6.08\nweightedAverageShsOut:15343783000\nweightedAverageShsOutDil:15408095000",
+    "metadata": {
+      "date": "2024-09-30",
+      "corporation": "AAPL",
+      "statement": "income-statement"
+    }
+  },
+  {
+    "page_content": "date:2023-09-30\nsymbol:AAPL\nreportedCurrency:USD\ncik:0000320193\nfilingDate:2023-11-03\nacceptedDate:2023-11-02 18:08:27\nfiscalYear:2023\nperiod:FY\nrevenue:383285000000\ncostOfRevenue:214137000000\ngrossProfit:169148000000\nresearchAndDevelopmentExpenses:29915000000\ngeneralAndAdministrativeExpenses:0\nsellingAndMarketingExpenses:0\nsellingGeneralAndAdministrativeExpenses:24932000000\notherExpenses:0\noperatingExpenses:54847000000\ncostAndExpenses:268984000000\nnetInterestIncome:-183000000\ninterestIncome:3750000000\ninterestExpense:3933000000\ndepreciationAndAmortization:11519000000\nebitda:125820000000\nebit:114301000000\nnonOperatingIncomeExcludingInterest:0\noperatingIncome:114301000000\ntotalOtherIncomeExpensesNet:-565000000\nincomeBeforeTax:113736000000\nincomeTaxExpense:16741000000\nnetIncomeFromContinuingOperations:96995000000\nnetIncomeFromDiscontinuedOperations:0\notherAdjustmentsToNetIncome:0\nnetIncome:96995000000\nnetIncomeDeductions:0\nbottomLineNetIncome:96995000000\neps:6.16\nepsDiluted:6.13\nweightedAverageShsOut:15744231000\nweightedAverageShsOutDil:15812547000",
+    "metadata": {
+      "date": "2023-09-30",
+      "corporation": "AAPL",
+      "statement": "income-statement"
+    }
+  },
+  {
+    "page_content": "date:2024-09-30\nsymbol:AAPL\nreportedCurrency:USD\ncik:0000320193\nfilingDate:2024-11-01\nacceptedDate:2024-11-01 06:01:36\nfiscalYear:2024\nperiod:FY\ncashAndCashEquivalents:29943000000\nshortTermInvestments:35228000000\ncashAndShortTermInvestments:65171000000\nnetReceivables:66243000000\naccountsReceivables:33410000000\notherReceivables:32833000000\ninventory:7286000000\nprepaids:0\notherCurrentAssets:14287000000\ntotalCurrentAssets:152987000000\npropertyPlantEquipmentNet:45680000000\ngoodwill:0\nintangibleAssets:0\ngoodwillAndIntangibleAssets:0\nlongTermInvestments:91479000000\ntaxAssets:19499000000\notherNonCurrentAssets:55335000000\ntotalNonCurrentAssets:211993000000\notherAssets:0\ntotalAssets:364980000000\ntotalPayables:95561000000\naccountPayables:68960000000\notherPayables:26601000000\naccruedExpenses:0\nshortTermDebt:20879000000\ncapitalLeaseObligationsCurrent:1632000000\ntaxPayables:26601000000\ndeferredRevenue:8249000000\notherCurrentLiabilities:50071000000\ntotalCurrentLiabilities:176392000000\nlongTermDebt:85750000000\ncapitalLeaseObligationsNonCurrent:10798000000\ndeferredRevenueNonCurrent:0\ndeferredTaxLiabilitiesNonCurrent:0\notherNonCurrentLiabilities:35090000000\ntotalNonCurrentLiabilities:131638000000\notherLiabilities:0\ncapitalLeaseObligations:12430000000\ntotalLiabilities:308030000000\ntreasuryStock:0\npreferredStock:0\ncommonStock:83276000000\nretainedEarnings:-19154000000\nadditionalPaidInCapital:0\naccumulatedOtherComprehensiveIncomeLoss:-7172000000\notherTotalStockholdersEquity:0\ntotalStockholdersEquity:56950000000\ntotalEquity:56950000000\nminorityInterest:0\ntotalLiabilitiesAndTotalEquity:364980000000\ntotalInvestments:126707000000\ntotalDebt:119059000000\nnetDebt:89116000000",
+    "metadata": {
+      "date": "2024-09-30",
+      "corporation": "AAPL",
+      "statement": "balance-sheet-statement"
+    }
+  },
+  {
+    "page_content": "date:2023-09-30\nsymbol:AAPL\nreportedCurrency:USD\ncik:0000320193\nfilingDate:2023-11-03\nacceptedDate:2023-11-02 18:08:27\nfiscalYear:2023\nperiod:FY\ncashAndCashEquivalents:29965000000\nshortTermInvestments:31590000000\ncashAndShortTermInvestments:61555000000\nnetReceivables:60985000000\naccountsReceivables:29508000000\notherReceivables:31477000000\ninventory:6331000000\nprepaids:0\notherCurrentAssets:14695000000\ntotalCurrentAssets:143566000000\npropertyPlantEquipmentNet:54376000000\ngoodwill:0\nintangibleAssets:0\ngoodwillAndIntangibleAssets:0\nlongTermInvestments:100544000000\ntaxAssets:17852000000\notherNonCurrentAssets:36245000000\ntotalNonCurrentAssets:209017000000\notherAssets:0\ntotalAssets:352583000000\ntotalPayables:71430000000\naccountPayables:62611000000\notherPayables:8819000000\naccruedExpenses:0\nshortTermDebt:15807000000\ncapitalLeaseObligationsCurrent:1575000000\ntaxPayables:8819000000\ndeferredRevenue:8061000000\notherCurrentLiabilities:48435000000\ntotalCurrentLiabilities:145308000000\nlongTermDebt:95281000000\ncapitalLeaseObligationsNonCurrent:11267000000\ndeferredRevenueNonCurrent:0\ndeferredTaxLiabilitiesNonCurrent:0\notherNonCurrentLiabilities:38581000000\ntotalNonCurrentLiabilities:145129000000\notherLiabilities:0\ncapitalLeaseObligations:12842000000\ntotalLiabilities:290437000000\ntreasuryStock:0\npreferredStock:0\ncommonStock:73812000000\nretainedEarnings:-214000000\nadditionalPaidInCapital:0\naccumulatedOtherComprehensiveIncomeLoss:-11452000000\notherTotalStockholdersEquity:0\ntotalStockholdersEquity:62146000000\ntotalEquity:62146000000\nminorityInterest:0\ntotalLiabilitiesAndTotalEquity:352583000000\ntotalInvestments:132134000000\ntotalDebt:123930000000\nnetDebt:93965000000",
+    "metadata": {
+      "date": "2023-09-30",
+      "corporation": "AAPL",
+      "statement": "balance-sheet-statement"
+    }
+  },
+  {
+    "page_content": "date:2024-09-30\nsymbol:AAPL\nreportedCurrency:USD\ncik:0000320193\nfilingDate:2024-11-01\nacceptedDate:2024-11-01 06:01:36\nfiscalYear:2024\nperiod:FY\nnetIncome:93736000000\ndepreciationAndAmortization:11445000000\ndeferredIncomeTax:0\nstockBasedCompensation:11688000000\nchangeInWorkingCapital:3651000000\naccountsReceivables:-5144000000\ninventory:-1046000000\naccountsPayables:6020000000\notherWorkingCapital:3821000000\notherNonCashItems:-2266000000\nnetCashProvidedByOperatingActivities:118254000000\ninvestmentsInPropertyPlantAndEquipment:-9447000000\nacquisitionsNet:0\npurchasesOfInvestments:-48656000000\nsalesMaturitiesOfInvestments:62346000000\notherInvestingActivities:-1308000000\nnetCashProvidedByInvestingActivities:2935000000\nnetDebtIssuance:-5998000000\nlongTermNetDebtIssuance:-9958000000\nshortTermNetDebtIssuance:3960000000\nnetStockIssuance:-94949000000\nnetCommonStockIssuance:-94949000000\ncommonStockIssuance:0\ncommonStockRepurchased:-94949000000\nnetPreferredStockIssuance:0\nnetDividendsPaid:-15234000000\ncommonDividendsPaid:-15234000000\npreferredDividendsPaid:0\notherFinancingActivities:-5802000000\nnetCashProvidedByFinancingActivities:-121983000000\neffectOfForexChangesOnCash:0\nnetChangeInCash:-794000000\ncashAtEndOfPeriod:29943000000\ncashAtBeginningOfPeriod:30737000000\noperatingCashFlow:118254000000\ncapitalExpenditure:-9447000000\nfreeCashFlow:108807000000\nincomeTaxesPaid:26102000000\ninterestPaid:0",
+    "metadata": {
+      "date": "2024-09-30",
+      "corporation": "AAPL",
+      "statement": "cash-flow-statement"
+    }
+  },
+  {
+    "page_content": "date:2023-09-30\nsymbol:AAPL\nreportedCurrency:USD\ncik:0000320193\nfilingDate:2023-11-03\nacceptedDate:2023-11-02 18:08:27\nfiscalYear:2023\nperiod:FY\nnetIncome:96995000000\ndepreciationAndAmortization:11519000000\ndeferredIncomeTax:0\nstockBasedCompensation:10833000000\nchangeInWorkingCapital:-6577000000\naccountsReceivables:-417000000\ninventory:-1618000000\naccountsPayables:-1889000000\notherWorkingCapital:-2653000000\notherNonCashItems:-2227000000\nnetCashProvidedByOperatingActivities:110543000000\ninvestmentsInPropertyPlantAndEquipment:-10959000000\nacquisitionsNet:0\npurchasesOfInvestments:-29513000000\nsalesMaturitiesOfInvestments:45514000000\notherInvestingActivities:-1337000000\nnetCashProvidedByInvestingActivities:3705000000\nnetDebtIssuance:-9901000000\nlongTermNetDebtIssuance:-5923000000\nshortTermNetDebtIssuance:-3978000000\nnetStockIssuance:-77550000000\nnetCommonStockIssuance:-77550000000\ncommonStockIssuance:0\ncommonStockRepurchased:-77550000000\nnetPreferredStockIssuance:0\nnetDividendsPaid:-15025000000\ncommonDividendsPaid:-15025000000\npreferredDividendsPaid:0\notherFinancingActivities:-6012000000\nnetCashProvidedByFinancingActivities:-108488000000\neffectOfForexChangesOnCash:0\nnetChangeInCash:5760000000\ncashAtEndOfPeriod:30737000000\ncashAtBeginningOfPeriod:24977000000\noperatingCashFlow:110543000000\ncapitalExpenditure:-10959000000\nfreeCashFlow:99584000000\nincomeTaxesPaid:18679000000\ninterestPaid:3803000000",
+    "metadata": {
+      "date": "2023-09-30",
+      "corporation": "AAPL",
+      "statement": "cash-flow-statement"
+    }
+  },
+  {
+    "page_content": "date:2025-06-30\nsymbol:MSFT\nreportedCurrency:USD\ncik:0000789019\nfilingDate:2025-07-30\nacceptedDate:2025-07-30 16:11:40\nfiscalYear:2025\nperiod:FY\nrevenue:281724000000\ncostOfRevenue:87831000000\ngrossProfit:193893000000\nresearchAndDevelopmentExpenses:32488000000\ngeneralAndAdministrativeExpenses:7223000000\nsellingAndMarketingExpenses:25654000000\nsellingGeneralAndAdministrativeExpenses:32877000000\notherExpenses:0\noperatingExpenses:65365000000\ncostAndExpenses:153196000000\nnetInterestIncome:262000000\ninterestIncome:2647000000\ninterestExpense:2385000000\ndepreciationAndAmortization:34153000000\nebitda:160165000000\nebit:126012000000\nnonOperatingIncomeExcludingInterest:2516000000\noperatingIncome:128528000000\ntotalOtherIncomeExpensesNet:-4901000000\nincomeBeforeTax:123627000000\nincomeTaxExpense:21795000000\nnetIncomeFromContinuingOperations:101832000000\nnetIncomeFromDiscontinuedOperations:0\notherAdjustmentsToNetIncome:0\nnetIncome:101832000000\nnetIncomeDeductions:0\nbottomLineNetIncome:101832000000\neps:13.7\nepsDiluted:13.64\nweightedAverageShsOut:7433000000\nweightedAverageShsOutDil:7465000000",
+    "metadata": {
+      "date": "2025-06-30",
+      "corporation": "MSFT",
+      "statement": "income-statement"
+    }
+  },
+  {
+    "page_content": "date:2024-06-30\nsymbol:MSFT\nreportedCurrency:USD\ncik:0000789019\nfilingDate:2024-07-30\nacceptedDate:2024-07-30 16:06:22\nfiscalYear:2024\nperiod:FY\nrevenue:245122000000\ncostOfRevenue:74114000000\ngrossProfit:171008000000\nresearchAndDevelopmentExpenses:29510000000\ngeneralAndAdministrativeExpenses:7609000000\nsellingAndMarketingExpenses:24456000000\nsellingGeneralAndAdministrativeExpenses:32065000000\notherExpenses:0\noperatingExpenses:61575000000\ncostAndExpenses:135689000000\nnetInterestIncome:222000000\ninterestIncome:3157000000\ninterestExpense:2935000000\ndepreciationAndAmortization:22287000000\nebitda:133009000000\nebit:110722000000\nnonOperatingIncomeExcludingInterest:-1289000000\noperatingIncome:109433000000\ntotalOtherIncomeExpensesNet:-1646000000\nincomeBeforeTax:107787000000\nincomeTaxExpense:19651000000\nnetIncomeFromContinuingOperations:88136000000\nnetIncomeFromDiscontinuedOperations:0\notherAdjustmentsToNetIncome:0\nnetIncome:88136000000\nnetIncomeDeductions:0\nbottomLineNetIncome:88136000000\neps:11.86\nepsDiluted:11.8\nweightedAverageShsOut:7431000000\nweightedAverageShsOutDil:7469000000",
+    "metadata": {
+      "date": "2024-06-30",
+      "corporation": "MSFT",
+      "statement": "income-statement"
+    }
+  },
+  {
+    "page_content": "date:2025-06-30\nsymbol:MSFT\nreportedCurrency:USD\ncik:0000789019\nfilingDate:2025-07-30\nacceptedDate:2025-07-30 16:11:40\nfiscalYear:2025\nperiod:FY\ncashAndCashEquivalents:30242000000\nshortTermInvestments:64313000000\ncashAndShortTermInvestments:94555000000\nnetReceivables:69905000000\naccountsReceivables:69905000000\notherReceivables:0\ninventory:938000000\nprepaids:0\notherCurrentAssets:25733000000\ntotalCurrentAssets:191131000000\npropertyPlantEquipmentNet:229789000000\ngoodwill:119509000000\nintangibleAssets:22604000000\ngoodwillAndIntangibleAssets:142113000000\nlongTermInvestments:15133000000\ntaxAssets:0\notherNonCurrentAssets:40837000000\ntotalNonCurrentAssets:427872000000\notherAssets:0\ntotalAssets:619003000000\ntotalPayables:34935000000\naccountPayables:27724000000\notherPayables:7211000000\naccruedExpenses:0\nshortTermDebt:2999000000\ncapitalLeaseObligationsCurrent:0\ntaxPayables:0\ndeferredRevenue:64555000000\notherCurrentLiabilities:38729000000\ntotalCurrentLiabilities:141218000000\nlongTermDebt:40152000000\ncapitalLeaseObligationsNonCurrent:17437000000\ndeferredRevenueNonCurrent:2710000000\ndeferredTaxLiabilitiesNonCurrent:2835000000\notherNonCurrentLiabilities:71172000000\ntotalNonCurrentLiabilities:134306000000\notherLiabilities:0\ncapitalLeaseObligations:17437000000\ntotalLiabilities:275524000000\ntreasuryStock:0\npreferredStock:0\ncommonStock:109095000000\nretainedEarnings:237731000000\nadditionalPaidInCapital:0\naccumulatedOtherComprehensiveIncomeLoss:-3347000000\notherTotalStockholdersEquity:0\ntotalStockholdersEquity:343479000000\ntotalEquity:343479000000\nminorityInterest:0\ntotalLiabilitiesAndTotalEquity:619003000000\ntotalInvestments:79446000000\ntotalDebt:60588000000\nnetDebt:30346000000",
+    "metadata": {
+      "date": "2025-06-30",
+      "corporation": "MSFT",
+      "statement": "balance-sheet-statement"
+    }
+  },
+  {
+    "page_content": "date:2024-06-30\nsymbol:MSFT\nreportedCurrency:USD\ncik:0000789019\nfilingDate:2024-07-30\nacceptedDate:2024-07-30 16:06:22\nfiscalYear:2024\nperiod:FY\ncashAndCashEquivalents:18315000000\nshortTermInvestments:57216000000\ncashAndShortTermInvestments:75531000000\nnetReceivables:56924000000\naccountsReceivables:56924000000\notherReceivables:0\ninventory:1246000000\nprepaids:0\notherCurrentAssets:26033000000\ntotalCurrentAssets:159734000000\npropertyPlantEquipmentNet:154552000000\ngoodwill:119220000000\nintangibleAssets:27597000000\ngoodwillAndIntangibleAssets:146817000000\nlongTermInvestments:14600000000\ntaxAssets:0\notherNonCurrentAssets:36460000000\ntotalNonCurrentAssets:352429000000\notherAssets:0\ntotalAssets:512163000000\ntotalPayables:27013000000\naccountPayables:21996000000\notherPayables:5017000000\naccruedExpenses:0\nshortTermDebt:8942000000\ncapitalLeaseObligationsCurrent:0\ntaxPayables:5017000000\ndeferredRevenue:57582000000\notherCurrentLiabilities:31749000000\ntotalCurrentLiabilities:125286000000\nlongTermDebt:42688000000\ncapitalLeaseObligationsNonCurrent:15497000000\ndeferredRevenueNonCurrent:2602000000\ndeferredTaxLiabilitiesNonCurrent:2618000000\notherNonCurrentLiabilities:54995000000\ntotalNonCurrentLiabilities:118400000000\notherLiabilities:0\ncapitalLeaseObligations:40293000000\ntotalLiabilities:243686000000\ntreasuryStock:0\npreferredStock:0\ncommonStock:100923000000\nretainedEarnings:173144000000\nadditionalPaidInCapital:0\naccumulatedOtherComprehensiveIncomeLoss:-5590000000\notherTotalStockholdersEquity:0\ntotalStockholdersEquity:268477000000\ntotalEquity:268477000000\nminorityInterest:0\ntotalLiabilitiesAndTotalEquity:512163000000\ntotalInvestments:71816000000\ntotalDebt:67127000000\nnetDebt:48812000000",
+    "metadata": {
+      "date": "2024-06-30",
+      "corporation": "MSFT",
+      "statement": "balance-sheet-statement"
+    }
+  },
+  {
+    "page_content": "date:2025-06-30\nsymbol:MSFT\nreportedCurrency:USD\ncik:0000789019\nfilingDate:2025-07-30\nacceptedDate:2025-07-30 16:11:40\nfiscalYear:2025\nperiod:FY\nnetIncome:101832000000\ndepreciationAndAmortization:34153000000\ndeferredIncomeTax:-7056000000\nstockBasedCompensation:11974000000\nchangeInWorkingCapital:-5350000000\naccountsReceivables:-10581000000\ninventory:309000000\naccountsPayables:569000000\notherWorkingCapital:4353000000\notherNonCashItems:609000000\nnetCashProvidedByOperatingActivities:136162000000\ninvestmentsInPropertyPlantAndEquipment:-64551000000\nacquisitionsNet:-5978000000\npurchasesOfInvestments:-29775000000\nsalesMaturitiesOfInvestments:25388000000\notherInvestingActivities:2317000000\nnetCashProvidedByInvestingActivities:-72599000000\nnetDebtIssuance:-8962000000\nlongTermNetDebtIssuance:-3216000000\nshortTermNetDebtIssuance:-5746000000\nnetStockIssuance:-16364000000\nnetCommonStockIssuance:-16364000000\ncommonStockIssuance:2056000000\ncommonStockRepurchased:-18420000000\nnetPreferredStockIssuance:0\nnetDividendsPaid:-24082000000\ncommonDividendsPaid:-24082000000\npreferredDividendsPaid:0\notherFinancingActivities:-2291000000\nnetCashProvidedByFinancingActivities:-51699000000\neffectOfForexChangesOnCash:63000000\nnetChangeInCash:11927000000\ncashAtEndOfPeriod:30242000000\ncashAtBeginningOfPeriod:18315000000\noperatingCashFlow:136162000000\ncapitalExpenditure:-64551000000\nfreeCashFlow:71611000000\nincomeTaxesPaid:0\ninterestPaid:0",
+    "metadata": {
+      "date": "2025-06-30",
+      "corporation": "MSFT",
+      "statement": "cash-flow-statement"
+    }
+  },
+  {
+    "page_content": "date:2024-06-30\nsymbol:MSFT\nreportedCurrency:USD\ncik:0000789019\nfilingDate:2024-07-30\nacceptedDate:2024-07-30 16:06:22\nfiscalYear:2024\nperiod:FY\nnetIncome:88136000000\ndepreciationAndAmortization:22287000000\ndeferredIncomeTax:-4738000000\nstockBasedCompensation:10734000000\nchangeInWorkingCapital:1824000000\naccountsReceivables:-7191000000\ninventory:1284000000\naccountsPayables:3545000000\notherWorkingCapital:4186000000\notherNonCashItems:305000000\nnetCashProvidedByOperatingActivities:118548000000\ninvestmentsInPropertyPlantAndEquipment:-44477000000\nacquisitionsNet:-69132000000\npurchasesOfInvestments:-17732000000\nsalesMaturitiesOfInvestments:35669000000\notherInvestingActivities:-1298000000\nnetCashProvidedByInvestingActivities:-96970000000\nnetDebtIssuance:575000000\nlongTermNetDebtIssuance:-4675000000\nshortTermNetDebtIssuance:5250000000\nnetStockIssuance:-15252000000\nnetCommonStockIssuance:-15252000000\ncommonStockIssuance:2002000000\ncommonStockRepurchased:-17254000000\nnetPreferredStockIssuance:0\nnetDividendsPaid:-21771000000\ncommonDividendsPaid:-21771000000\npreferredDividendsPaid:0\notherFinancingActivities:-1309000000\nnetCashProvidedByFinancingActivities:-37757000000\neffectOfForexChangesOnCash:-210000000\nnetChangeInCash:-16389000000\ncashAtEndOfPeriod:18315000000\ncashAtBeginningOfPeriod:34704000000\noperatingCashFlow:118548000000\ncapitalExpenditure:-44477000000\nfreeCashFlow:74071000000\nincomeTaxesPaid:0\ninterestPaid:0",
+    "metadata": {
+      "date": "2024-06-30",
+      "corporation": "MSFT",
+      "statement": "cash-flow-statement"
+    }
+  },
+  {
+    "page_content": "date:2025-01-31\nsymbol:NVDA\nreportedCurrency:USD\ncik:0001045810\nfilingDate:2025-02-26\nacceptedDate:2025-02-26 16:48:33\nfiscalYear:2025\nperiod:FY\nrevenue:130497000000\ncostOfRevenue:32639000000\ngrossProfit:97858000000\nresearchAndDevelopmentExpenses:12914000000\ngeneralAndAdministrativeExpenses:0\nsellingAndMarketingExpenses:0\nsellingGeneralAndAdministrativeExpenses:3491000000\notherExpenses:0\noperatingExpenses:16405000000\ncostAndExpenses:49044000000\nnetInterestIncome:1539000000\ninterestIncome:1786000000\ninterestExpense:247000000\ndepreciationAndAmortization:1864000000\nebitda:86137000000\nebit:84273000000\nnonOperatingIncomeExcludingInterest:-2820000000\noperatingIncome:81453000000\ntotalOtherIncomeExpensesNet:2573000000\nincomeBeforeTax:84026000000\nincomeTaxExpense:11146000000\nnetIncomeFromContinuingOperations:72880000000\nnetIncomeFromDiscontinuedOperations:0\notherAdjustmentsToNetIncome:0\nnetIncome:72880000000\nnetIncomeDeductions:0\nbottomLineNetIncome:72880000000\neps:2.97\nepsDiluted:2.94\nweightedAverageShsOut:24555000000\nweightedAverageShsOutDil:24804000000",
+    "metadata": {
+      "date": "2025-01-31",
+      "corporation": "NVDA",
+      "statement": "income-statement"
+    }
+  },
+  {
+    "page_content": "date:2024-01-31\nsymbol:NVDA\nreportedCurrency:USD\ncik:0001045810\nfilingDate:2024-02-21\nacceptedDate:2024-02-21 16:36:57\nfiscalYear:2024\nperiod:FY\nrevenue:60922000000\ncostOfRevenue:16621000000\ngrossProfit:44301000000\nresearchAndDevelopmentExpenses:8675000000\ngeneralAndAdministrativeExpenses:0\nsellingAndMarketingExpenses:0\nsellingGeneralAndAdministrativeExpenses:2654000000\notherExpenses:0\noperatingExpenses:11329000000\ncostAndExpenses:27950000000\nnetInterestIncome:609000000\ninterestIncome:866000000\ninterestExpense:257000000\ndepreciationAndAmortization:1508000000\nebitda:35583000000\nebit:34075000000\nnonOperatingIncomeExcludingInterest:-1103000000\noperatingIncome:32972000000\ntotalOtherIncomeExpensesNet:846000000\nincomeBeforeTax:33818000000\nincomeTaxExpense:4058000000\nnetIncomeFromContinuingOperations:29760000000\nnetIncomeFromDiscontinuedOperations:0\notherAdjustmentsToNetIncome:0\nnetIncome:29760000000\nnetIncomeDeductions:0\nbottomLineNetIncome:29760000000\neps:1.21\nepsDiluted:1.19\nweightedAverageShsOut:24690000000\nweightedAverageShsOutDil:24940000000",
+    "metadata": {
+      "date": "2024-01-31",
+      "corporation": "NVDA",
+      "statement": "income-statement"
+    }
+  },
+  {
+    "page_content": "date:2025-01-31\nsymbol:NVDA\nreportedCurrency:USD\ncik:0001045810\nfilingDate:2025-02-26\nacceptedDate:2025-02-26 16:48:33\nfiscalYear:2025\nperiod:FY\ncashAndCashEquivalents:8589000000\nshortTermInvestments:34621000000\ncashAndShortTermInvestments:43210000000\nnetReceivables:23065000000\naccountsReceivables:23065000000\notherReceivables:0\ninventory:10080000000\nprepaids:3300000000\notherCurrentAssets:471000000\ntotalCurrentAssets:80126000000\npropertyPlantEquipmentNet:8076000000\ngoodwill:5188000000\nintangibleAssets:807000000\ngoodwillAndIntangibleAssets:5995000000\nlongTermInvestments:3387000000\ntaxAssets:10979000000\notherNonCurrentAssets:3038000000\ntotalNonCurrentAssets:31475000000\notherAssets:0\ntotalAssets:111601000000\ntotalPayables:7191000000\naccountPayables:6310000000\notherPayables:881000000\naccruedExpenses:8130000000\nshortTermDebt:0\ncapitalLeaseObligationsCurrent:288000000\ntaxPayables:0\ndeferredRevenue:837000000\notherCurrentLiabilities:1601000000\ntotalCurrentLiabilities:18047000000\nlongTermDebt:8463000000\ncapitalLeaseObligationsNonCurrent:1519000000\ndeferredRevenueNonCurrent:976000000\ndeferredTaxLiabilitiesNonCurrent:886000000\notherNonCurrentLiabilities:2383000000\ntotalNonCurrentLiabilities:14227000000\notherLiabilities:0\ncapitalLeaseObligations:1519000000\ntotalLiabilities:32274000000\ntreasuryStock:0\npreferredStock:0\ncommonStock:24000000\nretainedEarnings:68038000000\nadditionalPaidInCapital:11237000000\naccumulatedOtherComprehensiveIncomeLoss:28000000\notherTotalStockholdersEquity:0\ntotalStockholdersEquity:79327000000\ntotalEquity:79327000000\nminorityInterest:0\ntotalLiabilitiesAndTotalEquity:111601000000\ntotalInvestments:38008000000\ntotalDebt:10270000000\nnetDebt:1681000000",
+    "metadata": {
+      "date": "2025-01-31",
+      "corporation": "NVDA",
+      "statement": "balance-sheet-statement"
+    }
+  },
+  {
+    "page_content": "date:2024-01-31\nsymbol:NVDA\nreportedCurrency:USD\ncik:0001045810\nfilingDate:2024-02-21\nacceptedDate:2024-02-21 16:36:57\nfiscalYear:2024\nperiod:FY\ncashAndCashEquivalents:7280000000\nshortTermInvestments:18704000000\ncashAndShortTermInvestments:25984000000\nnetReceivables:9999000000\naccountsReceivables:9999000000\notherReceivables:0\ninventory:5282000000\nprepaids:0\notherCurrentAssets:3080000000\ntotalCurrentAssets:44345000000\npropertyPlantEquipmentNet:5260000000\ngoodwill:4430000000\nintangibleAssets:1112000000\ngoodwillAndIntangibleAssets:5542000000\nlongTermInvestments:1321000000\ntaxAssets:6081000000\notherNonCurrentAssets:3179000000\ntotalNonCurrentAssets:21383000000\notherAssets:0\ntotalAssets:65728000000\ntotalPayables:2995000000\naccountPayables:2699000000\notherPayables:296000000\naccruedExpenses:4780000000\nshortTermDebt:1250000000\ncapitalLeaseObligationsCurrent:228000000\ntaxPayables:296000000\ndeferredRevenue:764000000\notherCurrentLiabilities:614000000\ntotalCurrentLiabilities:10631000000\nlongTermDebt:8459000000\ncapitalLeaseObligationsNonCurrent:1119000000\ndeferredRevenueNonCurrent:573000000\ndeferredTaxLiabilitiesNonCurrent:462000000\notherNonCurrentLiabilities:1506000000\ntotalNonCurrentLiabilities:12119000000\notherLiabilities:0\ncapitalLeaseObligations:1119000000\ntotalLiabilities:22750000000\ntreasuryStock:0\npreferredStock:0\ncommonStock:25000000\nretainedEarnings:29817000000\nadditionalPaidInCapital:13109000000\naccumulatedOtherComprehensiveIncomeLoss:27000000\notherTotalStockholdersEquity:0\ntotalStockholdersEquity:42978000000\ntotalEquity:42978000000\nminorityInterest:0\ntotalLiabilitiesAndTotalEquity:65728000000\ntotalInvestments:20025000000\ntotalDebt:11056000000\nnetDebt:3776000000",
+    "metadata": {
+      "date": "2024-01-31",
+      "corporation": "NVDA",
+      "statement": "balance-sheet-statement"
+    }
+  },
+  {
+    "page_content": "date:2025-01-31\nsymbol:NVDA\nreportedCurrency:USD\ncik:0001045810\nfilingDate:2025-02-26\nacceptedDate:2025-02-26 16:48:33\nfiscalYear:2025\nperiod:FY\nnetIncome:72880000000\ndepreciationAndAmortization:1864000000\ndeferredIncomeTax:-4477000000\nstockBasedCompensation:4737000000\nchangeInWorkingCapital:-9383000000\naccountsReceivables:-13063000000\ninventory:-4781000000\naccountsPayables:3357000000\notherWorkingCapital:5104000000\notherNonCashItems:-1532000000\nnetCashProvidedByOperatingActivities:64089000000\ninvestmentsInPropertyPlantAndEquipment:-3236000000\nacquisitionsNet:-1007000000\npurchasesOfInvestments:-28061000000\nsalesMaturitiesOfInvestments:11861000000\notherInvestingActivities:22000000\nnetCashProvidedByInvestingActivities:-20421000000\nnetDebtIssuance:-1250000000\nlongTermNetDebtIssuance:-1250000000\nshortTermNetDebtIssuance:0\nnetStockIssuance:-33706000000\nnetCommonStockIssuance:-33706000000\ncommonStockIssuance:0\ncommonStockRepurchased:-33706000000\nnetPreferredStockIssuance:0\nnetDividendsPaid:-834000000\ncommonDividendsPaid:-834000000\npreferredDividendsPaid:0\notherFinancingActivities:-6569000000\nnetCashProvidedByFinancingActivities:-42359000000\neffectOfForexChangesOnCash:0\nnetChangeInCash:1309000000\ncashAtEndOfPeriod:8589000000\ncashAtBeginningOfPeriod:7280000000\noperatingCashFlow:64089000000\ncapitalExpenditure:-3236000000\nfreeCashFlow:60853000000\nincomeTaxesPaid:15118000000\ninterestPaid:246000000",
+    "metadata": {
+      "date": "2025-01-31",
+      "corporation": "NVDA",
+      "statement": "cash-flow-statement"
+    }
+  },
+  {
+    "page_content": "date:2024-01-31\nsymbol:NVDA\nreportedCurrency:USD\ncik:0001045810\nfilingDate:2024-02-21\nacceptedDate:2024-02-21 16:36:57\nfiscalYear:2024\nperiod:FY\nnetIncome:29760000000\ndepreciationAndAmortization:1508000000\ndeferredIncomeTax:-2489000000\nstockBasedCompensation:3549000000\nchangeInWorkingCapital:-3722000000\naccountsReceivables:-6172000000\ninventory:-98000000\naccountsPayables:1531000000\notherWorkingCapital:1017000000\notherNonCashItems:-516000000\nnetCashProvidedByOperatingActivities:28090000000\ninvestmentsInPropertyPlantAndEquipment:-1069000000\nacquisitionsNet:-83000000\npurchasesOfInvestments:-19073000000\nsalesMaturitiesOfInvestments:9783000000\notherInvestingActivities:-124000000\nnetCashProvidedByInvestingActivities:-10566000000\nnetDebtIssuance:-1250000000\nlongTermNetDebtIssuance:-1250000000\nshortTermNetDebtIssuance:0\nnetStockIssuance:-9533000000\nnetCommonStockIssuance:-9533000000\ncommonStockIssuance:0\ncommonStockRepurchased:-9533000000\nnetPreferredStockIssuance:0\nnetDividendsPaid:-395000000\ncommonDividendsPaid:-395000000\npreferredDividendsPaid:0\notherFinancingActivities:-2455000000\nnetCashProvidedByFinancingActivities:-13633000000\neffectOfForexChangesOnCash:0\nnetChangeInCash:3891000000\ncashAtEndOfPeriod:7280000000\ncashAtBeginningOfPeriod:3389000000\noperatingCashFlow:28090000000\ncapitalExpenditure:-1069000000\nfreeCashFlow:27021000000\nincomeTaxesPaid:6549000000\ninterestPaid:252000000",
+    "metadata": {
+      "date": "2024-01-31",
+      "corporation": "NVDA",
+      "statement": "cash-flow-statement"
+    }
+  },
+  {
+    "page_content": "date:2024-12-31\nsymbol:AMZN\nreportedCurrency:USD\ncik:0001018724\nfilingDate:2025-02-07\nacceptedDate:2025-02-06 18:40:29\nfiscalYear:2024\nperiod:FY\nrevenue:637959000000\ncostOfRevenue:326288000000\ngrossProfit:311671000000\nresearchAndDevelopmentExpenses:88544000000\ngeneralAndAdministrativeExpenses:11359000000\nsellingAndMarketingExpenses:43907000000\nsellingGeneralAndAdministrativeExpenses:55266000000\notherExpenses:99268000000\noperatingExpenses:243078000000\ncostAndExpenses:569366000000\nnetInterestIncome:2271000000\ninterestIncome:4677000000\ninterestExpense:2406000000\ndepreciationAndAmortization:52795000000\nebitda:123815000000\nebit:71020000000\nnonOperatingIncomeExcludingInterest:-2427000000\noperatingIncome:68593000000\ntotalOtherIncomeExpensesNet:-80000000\nincomeBeforeTax:68513000000\nincomeTaxExpense:9265000000\nnetIncomeFromContinuingOperations:59248000000\nnetIncomeFromDiscontinuedOperations:0\notherAdjustmentsToNetIncome:0\nnetIncome:59248000000\nnetIncomeDeductions:0\nbottomLineNetIncome:59248000000\neps:5.66\nepsDiluted:5.53\nweightedAverageShsOut:10473000000\nweightedAverageShsOutDil:10721000000",
+    "metadata": {
+      "date": "2024-12-31",
+      "corporation": "AMZN",
+      "statement": "income-statement"
+    }
+  },
+  {
+    "page_content": "date:2023-12-31\nsymbol:AMZN\nreportedCurrency:USD\ncik:0001018724\nfilingDate:2024-02-02\nacceptedDate:2024-02-01 18:48:30\nfiscalYear:2023\nperiod:FY\nrevenue:574785000000\ncostOfRevenue:304739000000\ngrossProfit:270046000000\nresearchAndDevelopmentExpenses:85622000000\ngeneralAndAdministrativeExpenses:11816000000\nsellingAndMarketingExpenses:44370000000\nsellingGeneralAndAdministrativeExpenses:56186000000\notherExpenses:91386000000\noperatingExpenses:233194000000\ncostAndExpenses:537933000000\nnetInterestIncome:-233000000\ninterestIncome:2949000000\ninterestExpense:3182000000\ndepreciationAndAmortization:48663000000\nebitda:89402000000\nebit:40739000000\nnonOperatingIncomeExcludingInterest:-3887000000\noperatingIncome:36852000000\ntotalOtherIncomeExpensesNet:705000000\nincomeBeforeTax:37557000000\nincomeTaxExpense:7120000000\nnetIncomeFromContinuingOperations:30425000000\nnetIncomeFromDiscontinuedOperations:0\notherAdjustmentsToNetIncome:0\nnetIncome:30425000000\nnetIncomeDeductions:0\nbottomLineNetIncome:30425000000\neps:2.95\nepsDiluted:2.9\nweightedAverageShsOut:10304000000\nweightedAverageShsOutDil:10492000000",
+    "metadata": {
+      "date": "2023-12-31",
+      "corporation": "AMZN",
+      "statement": "income-statement"
+    }
+  },
+  {
+    "page_content": "date:2024-12-31\nsymbol:AMZN\nreportedCurrency:USD\ncik:0001018724\nfilingDate:2025-02-07\nacceptedDate:2025-02-06 18:40:29\nfiscalYear:2024\nperiod:FY\ncashAndCashEquivalents:78779000000\nshortTermInvestments:22423000000\ncashAndShortTermInvestments:101202000000\nnetReceivables:55451000000\naccountsReceivables:55451000000\notherReceivables:0\ninventory:34214000000\nprepaids:0\notherCurrentAssets:0\ntotalCurrentAssets:190867000000\npropertyPlantEquipmentNet:328806000000\ngoodwill:23074000000\nintangibleAssets:8602000000\ngoodwillAndIntangibleAssets:31676000000\nlongTermInvestments:0\ntaxAssets:0\notherNonCurrentAssets:73545000000\ntotalNonCurrentAssets:434027000000\notherAssets:0\ntotalAssets:624894000000\ntotalPayables:94363000000\naccountPayables:94363000000\notherPayables:0\naccruedExpenses:66965000000\nshortTermDebt:0\ncapitalLeaseObligationsCurrent:0\ntaxPayables:0\ndeferredRevenue:18103000000\notherCurrentLiabilities:0\ntotalCurrentLiabilities:179431000000\nlongTermDebt:52623000000\ncapitalLeaseObligationsNonCurrent:78277000000\ndeferredRevenueNonCurrent:0\ndeferredTaxLiabilitiesNonCurrent:0\notherNonCurrentLiabilities:28593000000\ntotalNonCurrentLiabilities:159493000000\notherLiabilities:0\ncapitalLeaseObligations:78277000000\ntotalLiabilities:338924000000\ntreasuryStock:-7837000000\npreferredStock:0\ncommonStock:111000000\nretainedEarnings:172866000000\nadditionalPaidInCapital:120864000000\naccumulatedOtherComprehensiveIncomeLoss:-34000000\notherTotalStockholdersEquity:0\ntotalStockholdersEquity:285970000000\ntotalEquity:285970000000\nminorityInterest:0\ntotalLiabilitiesAndTotalEquity:624894000000\ntotalInvestments:22423000000\ntotalDebt:130900000000\nnetDebt:52121000000",
+    "metadata": {
+      "date": "2024-12-31",
+      "corporation": "AMZN",
+      "statement": "balance-sheet-statement"
+    }
+  },
+  {
+    "page_content": "date:2023-12-31\nsymbol:AMZN\nreportedCurrency:USD\ncik:0001018724\nfilingDate:2024-02-02\nacceptedDate:2024-02-01 18:48:30\nfiscalYear:2023\nperiod:FY\ncashAndCashEquivalents:73387000000\nshortTermInvestments:13393000000\ncashAndShortTermInvestments:86780000000\nnetReceivables:52253000000\naccountsReceivables:52253000000\notherReceivables:0\ninventory:33318000000\nprepaids:0\notherCurrentAssets:0\ntotalCurrentAssets:172351000000\npropertyPlantEquipmentNet:276690000000\ngoodwill:22789000000\nintangibleAssets:7687000000\ngoodwillAndIntangibleAssets:30476000000\nlongTermInvestments:0\ntaxAssets:0\notherNonCurrentAssets:48337000000\ntotalNonCurrentAssets:355503000000\notherAssets:0\ntotalAssets:527854000000\ntotalPayables:84981000000\naccountPayables:84981000000\notherPayables:0\naccruedExpenses:64709000000\nshortTermDebt:0\ncapitalLeaseObligationsCurrent:0\ntaxPayables:0\ndeferredRevenue:15227000000\notherCurrentLiabilities:0\ntotalCurrentLiabilities:164917000000\nlongTermDebt:58314000000\ncapitalLeaseObligationsNonCurrent:77297000000\ndeferredRevenueNonCurrent:0\ndeferredTaxLiabilitiesNonCurrent:0\notherNonCurrentLiabilities:25451000000\ntotalNonCurrentLiabilities:161062000000\notherLiabilities:0\ncapitalLeaseObligations:77297000000\ntotalLiabilities:325979000000\ntreasuryStock:-7837000000\npreferredStock:0\ncommonStock:109000000\nretainedEarnings:113618000000\nadditionalPaidInCapital:99025000000\naccumulatedOtherComprehensiveIncomeLoss:-3040000000\notherTotalStockholdersEquity:0\ntotalStockholdersEquity:201875000000\ntotalEquity:201875000000\nminorityInterest:0\ntotalLiabilitiesAndTotalEquity:527854000000\ntotalInvestments:13393000000\ntotalDebt:135611000000\nnetDebt:62224000000",
+    "metadata": {
+      "date": "2023-12-31",
+      "corporation": "AMZN",
+      "statement": "balance-sheet-statement"
+    }
+  },
+  {
+    "page_content": "date:2024-12-31\nsymbol:AMZN\nreportedCurrency:USD\ncik:0001018724\nfilingDate:2025-02-07\nacceptedDate:2025-02-06 18:40:29\nfiscalYear:2024\nperiod:FY\nnetIncome:59248000000\ndepreciationAndAmortization:52795000000\ndeferredIncomeTax:-4648000000\nstockBasedCompensation:22011000000\nchangeInWorkingCapital:-15541000000\naccountsReceivables:-3249000000\ninventory:-1884000000\naccountsPayables:2972000000\notherWorkingCapital:-13380000000\notherNonCashItems:2012000000\nnetCashProvidedByOperatingActivities:115877000000\ninvestmentsInPropertyPlantAndEquipment:-82999000000\nacquisitionsNet:-7082000000\npurchasesOfInvestments:-26005000000\nsalesMaturitiesOfInvestments:16403000000\notherInvestingActivities:5341000000\nnetCashProvidedByInvestingActivities:-94342000000\nnetDebtIssuance:-11812000000\nlongTermNetDebtIssuance:-11894000000\nshortTermNetDebtIssuance:82000000\nnetStockIssuance:0\nnetCommonStockIssuance:0\ncommonStockIssuance:0\ncommonStockRepurchased:0\nnetPreferredStockIssuance:0\nnetDividendsPaid:0\ncommonDividendsPaid:0\npreferredDividendsPaid:0\notherFinancingActivities:0\nnetCashProvidedByFinancingActivities:-11812000000\neffectOfForexChangesOnCash:-1301000000\nnetChangeInCash:8422000000\ncashAtEndOfPeriod:82312000000\ncashAtBeginningOfPeriod:73890000000\noperatingCashFlow:115877000000\ncapitalExpenditure:-82999000000\nfreeCashFlow:32878000000\nincomeTaxesPaid:12308000000\ninterestPaid:2364000000",
+    "metadata": {
+      "date": "2024-12-31",
+      "corporation": "AMZN",
+      "statement": "cash-flow-statement"
+    }
+  },
+  {
+    "page_content": "date:2023-12-31\nsymbol:AMZN\nreportedCurrency:USD\ncik:0001018724\nfilingDate:2024-02-02\nacceptedDate:2024-02-01 18:48:30\nfiscalYear:2023\nperiod:FY\nnetIncome:30425000000\ndepreciationAndAmortization:48663000000\ndeferredIncomeTax:-5876000000\nstockBasedCompensation:24023000000\nchangeInWorkingCapital:-11541000000\naccountsReceivables:-8348000000\ninventory:1449000000\naccountsPayables:5473000000\notherWorkingCapital:-10115000000\notherNonCashItems:-748000000\nnetCashProvidedByOperatingActivities:84946000000\ninvestmentsInPropertyPlantAndEquipment:-52729000000\nacquisitionsNet:-5839000000\npurchasesOfInvestments:-1488000000\nsalesMaturitiesOfInvestments:5627000000\notherInvestingActivities:4596000000\nnetCashProvidedByInvestingActivities:-49833000000\nnetDebtIssuance:-15879000000\nlongTermNetDebtIssuance:-8331000000\nshortTermNetDebtIssuance:-7548000000\nnetStockIssuance:0\nnetCommonStockIssuance:0\ncommonStockIssuance:0\ncommonStockRepurchased:0\nnetPreferredStockIssuance:0\nnetDividendsPaid:0\ncommonDividendsPaid:0\npreferredDividendsPaid:0\notherFinancingActivities:0\nnetCashProvidedByFinancingActivities:-15879000000\neffectOfForexChangesOnCash:403000000\nnetChangeInCash:19637000000\ncashAtEndOfPeriod:73890000000\ncashAtBeginningOfPeriod:54253000000\noperatingCashFlow:84946000000\ncapitalExpenditure:-52729000000\nfreeCashFlow:32217000000\nincomeTaxesPaid:11179000000\ninterestPaid:3112000000",
+    "metadata": {
+      "date": "2023-12-31",
+      "corporation": "AMZN",
+      "statement": "cash-flow-statement"
+    }
+  }
+]
