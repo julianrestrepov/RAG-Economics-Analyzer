@@ -10,7 +10,11 @@ class VectorRetriever:
 
 
     def single_query(self, query, top_k):
-        return self.vector_db.similarity_search(query=query, k=top_k)
+        context_retrieved_documents_list = self.vector_db.similarity_search(query=query, k=top_k)
+        context_list = [chunk.page_content for chunk in context_retrieved_documents_list]
+        context = "\n\n".join(context_list)
+        return context
+    
 
     def multiple_query(self, queries:[str], top_k: int = 3):
 
@@ -34,4 +38,4 @@ class VectorRetriever:
         top_docs = [clean(x["text"]) for x in sorted_chunks[:top_k]]
         context = "\n\n".join(top_docs)
 
-        return context, sorted_chunks
+        return context

@@ -1,6 +1,6 @@
 import streamlit as st
 from time import sleep
-from src.llm_model import query_solution, query_rewritting
+from src.llm_model import query_solution, query_rewritting, query_fred_api_needed
 from src.loaders import load_pdfs
 from src.data_preprocessing import pdf_splitter
 from src.embedders import ChromaDatabase
@@ -41,8 +41,8 @@ if 'chroma_database' not in st.session_state:
 
 # --- SIDEBAR ---
 with st.sidebar:
-    st.title("💼 Financial Analyst Bot")
-    st.caption("RAG Financial Analyst Assistant")
+    st.title("💼 Economic Analyst Bot")
+    st.caption("RAG Economic Analyst Assistant")
     
     # --- Model Settings ---
     st.markdown("## ⚙️ Model Settings")
@@ -103,46 +103,14 @@ with col1:
             st.markdown(message["content"])
 
     # --- RESPONSE GENERATION FUNCTION ---
-    def generate_response(query, context):
+    def generate_response(query, context, fred_data:str=None):
         conversation_history = "\n".join(
             f"{m['role'].capitalize()}: {m['content']}"
             for m in st.session_state.messages
         )
-
-        query_template = """
-        You are a financial assistant. 
-        Use only the information in <context> to answer the <user_question>.
-        You may synthesize and reason within the information in the <context> to explain relationships or trends, 
-        but do not use any information outside the provided context. 
-        if <context> can't answer the question respond "Sorry, my context window doesn't contain this information
-
-        Rules:
-        - Never use outside knowledge or assumptions.
-        - Answer concisely and factually.
-        - Use neutral financial language.
-        - Ignore conversation history unless it contains data directly relevant to the question.
-
-        Previous Conversations:
-        {conversation_history}
-
-        User Question:
-        {query}
-
-        Context:
-        {context}
-        """
+        return query_solution(query,context, conversation_history , temperature, model_to_use, fred_data=fred_data)
     
-       
-        #add_log(f'Retrieved {len(context.split('\n\n'))} embeddings')
 
-        model_input = query_template.format(
-            conversation_history=conversation_history,
-            query=query,
-            context=context
-        )
-        
-        return query_solution(model_input, temperature, model_to_use)
-    
         # --- USER INPUT ---
     if prompt := st.chat_input("Type your question here..."):
         # 1. Store and show user message
@@ -157,14 +125,17 @@ with col1:
             with st.chat_message("assistant", avatar="🧠"):
                 with st.spinner("Thinking..."):
                     if st.session_state.query_rewritting_indicator:
+
                         add_log(f'Processing query...')
                         add_log(f'Requerying query')
                         query_list = query_rewritting(prompt)
                         add_log(f'Queries generated {query_list}')
-                        context, full_context = st.session_state.vector_retriever.multiple_query(query_list, top_k=top_k)
+                        context = st.session_state.vector_retriever.multiple_query(query_list, top_k=top_k)
                         add_log(f'Top {top_k} context were retrieved')
-                        response = generate_response(prompt, context)
-                        add_log('Query answered')
+
+                        fred_data = query_fred_api_needed(prompt)
+                        response = generate_response(prompt, context, fred_data)
+                        #add_log('Query answered')
                         placeholder = st.empty()
                         full_response = ""
                         for token in response:
@@ -174,11 +145,13 @@ with col1:
                         placeholder.markdown(full_response)
 
                     else:
+
                         add_log(f'Processing query...')
                         context = st.session_state.vector_retriever.single_query(prompt, top_k=top_k)
                         add_log(f'Top {top_k} context were retrieved')
-                        add_log("\n\n".join([chunk.page_content for chunk in context]))
-                        response = generate_response(prompt, context)
+                        #add_log("\n\n".join([chunk.page_content for chunk in context]))
+                        fred_data = query_fred_api_needed(prompt)
+                        response = generate_response(prompt, context, fred_data)
                         add_log('Query answered')
                         placeholder = st.empty()
                         full_response = ""
@@ -197,7 +170,7 @@ with col1:
 with col2:
     
     st.header("📊 Testing Area")
-    st.write("Add any extra elements here, such as charts, metrics, or logs.")
+    st.write("Summary of logs and back-end processes.")
 
      # Initialize log storage
     if "logs" not in st.session_state:
@@ -208,7 +181,7 @@ with col2:
         for entry in st.session_state.logs:  # newest first
             st.markdown(f"**[{entry['time']}]** {entry['message']}")
     else:
-        st.info("No logs yet.")
+        st.info("Please run embeddings before making your first query.")
 
 
 

@@ -32,4 +32,3 @@ def load_pdfs(path: str) -> List[Document]:
         cleaned_sliced_pdfs.append(general_pdf_text_cleaning(raw_pdf))
     print()
     return cleaned_sliced_pdfs
-    
