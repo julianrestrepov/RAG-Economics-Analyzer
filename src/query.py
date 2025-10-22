@@ -15,7 +15,7 @@ class VectorRetriever:
         context = "\n\n".join(context_list)
         return context
     
-
+    # multiple queries, returns top_k most common and similar chunks from extracted samples
     def multiple_query(self, queries:[str], top_k: int = 3):
 
         chunk_dict_db = defaultdict(lambda: {"count":0, "max_score":0})
@@ -28,7 +28,7 @@ class VectorRetriever:
                     d["max_score"] = max(d["max_score"], score)
                     d["text"] = chunk.page_content
 
-        # Rank by count then score
+        # Rank by count & score
         sorted_chunks = sorted(chunk_dict_db.values(), key=lambda x: (x["count"], x["max_score"]), reverse=True)
 
         # Clean and join

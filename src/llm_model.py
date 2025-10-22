@@ -14,13 +14,13 @@ def get_llm(model: str, temperature: float):
     except Exception as e:
         print(f'Error connecting to model: {e}')
 
+# LLM to answer user question based on provided information
 def query_solution(query:str, context:str, conversation_history:str, temperature: float, model: str = default_llm_model, fred_data: str=None):
     query_template = f"""
-        You are a financial assistant. 
-        Use only the information in <context>, <previous conversations> and <FRED Data> to answer the <User Question>.
-        You may synthesize and reason within the information in the <context> and <previous conversations> to explain relationships or trends, 
-        but do not use any outside information
-        if <context> can't answer the question respond "Sorry, my context window doesn't contain this information"
+        You are an economic analyst
+        Use only the available information in <context>, <previous conversations> and <FRED Data> to answer the <User Question>.
+        You may synthesize and reason within the available information to explain relationships, comparison or trends. 
+        if available information can't answer the question respond "Sorry, my context window doesn't contain this information"
 
         Rules:
         - Never use outside knowledge
@@ -57,16 +57,17 @@ def query_solution(query:str, context:str, conversation_history:str, temperature
     except Exception as e:
         print(f"Error querying llm: {e}")
 
+# LLM to rewrite 1 query into x amount of semantically similar versions
 def query_rewritting(query:str, quantity:int = 3, model: str = default_llm_model):
 
     prompt_template = f"""
-    You are a query rewriting assistant. Given a user's question, rewrite it into {quantity} semantically similar variations that could retrieve different relevant information from a vector database. 
+    You are a query rewriting assistant. Given a user question, rewrite it into {quantity} semantically similar variations that could retrieve different relevant information from a vector database. 
     The rewrites should focus on the same meaning but use different wording or phrasing.
 
     Return questions separated exclusively by 1 comma, nothing else.
 
     User query: "{query}"
-        """
+    """
 
     try:
         llm = get_llm(model, 0.1)
@@ -77,7 +78,7 @@ def query_rewritting(query:str, quantity:int = 3, model: str = default_llm_model
     except Exception as e:
         print(f"Error querying llm: {e}")
 
-
+# LLM to determinate if FRED API is required and make request to be provided to Func Query Solution
 def query_fred_api_needed(query:str, model: str = default_llm_model):
     prompt = f"""
         You are a routing assistant for an economics RAG system.
@@ -88,7 +89,7 @@ def query_fred_api_needed(query:str, model: str = default_llm_model):
         - "search_text": if series_id unknown
         - "start_date": (YYYY-MM-DD)
         - "end_date": (YYYY-MM-DD)
-        Otherwise return "needs_fred":false
+        if not then return "needs_fred":false
 
         User query: {query}
         """

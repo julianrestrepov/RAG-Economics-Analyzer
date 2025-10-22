@@ -6,11 +6,12 @@ import numpy as np
 from typing import List
 
 
+# General pdf splitter
 def pdf_splitter(loaded_pdfs: Document, chunk_size: int =800, chunk_overlap:int =100, model_name:str =default_llm_model) -> list[Document]:
-    print(f"Loading {len(loaded_pdfs)} pdfs with a total of {sum([len(pdf) for pdf in loaded_pdfs])} pages")
     encoding = tiktoken.encoding_for_model(model_name)
     average_tokens = []
 
+    # lenght function by tokens
     def number_tokens(text): 
         average_tokens.append(len(encoding.encode(text)))
         return len(encoding.encode(text))
@@ -24,10 +25,10 @@ def pdf_splitter(loaded_pdfs: Document, chunk_size: int =800, chunk_overlap:int 
 
         pdfs_chunks_list.extend(text_splitter.split_documents(pdfs))
 
-    print('Average Tokens: ', np.mean(average_tokens))
-    print(f"PDF chunks: {len(pdfs_chunks_list)}")
     return pdfs_chunks_list
 
+
+# split financial statements from FMP
 def financial_statements_splitter(financial_statements: List[dict], chunk_size: int =800, chunk_overlap:int =100, model_name:str =default_llm_model):
 
     financial_statements_documents = [Document(page_content=statement['page_content'], metadata=statement['metadata']) for statement in financial_statements]
@@ -44,6 +45,4 @@ def financial_statements_splitter(financial_statements: List[dict], chunk_size: 
     
     chunked_statements = text_splitter(financial_statements_documents)
 
-    print(f"PDF size: {len(financial_statements_documents)}")
-    print(f"PDF chunks: {len(chunked_statements)}")
     return chunked_statements

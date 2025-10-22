@@ -3,6 +3,7 @@ from typing import List
 from langchain.schema import Document
 from langchain_openai import OpenAIEmbeddings
 
+
 class ChromaDatabase:
     def __init__(self, embedding_model:str, distance_metric:str):
         self.embedding_model = OpenAIEmbeddings(model=embedding_model)

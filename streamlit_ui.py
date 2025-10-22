@@ -9,18 +9,21 @@ from src.constants import MODELS_AVAILABLE, PDF_DATA_FOLDER_DIR, default_embeddi
 from dotenv import load_dotenv
 from datetime import datetime
 
+# Loading API Keys
 load_dotenv()
 
+# Add logs to Testing Area
 def add_log(message: str):
     timestamp = datetime.now().strftime("%H:%M:%S")
     st.session_state.logs.append({"time": timestamp, "message": message})
 
+# Clear chat hisotory and logs, including backed chat history
 def clear_chat_n_logs():
     st.session_state.messages = [{"role": "assistant", "content": "How may I assist you today?"}]
     st.session_state.logs = []
 
 
-# --- PAGE CONFIG ---
+# General page settings
 st.set_page_config(
     page_title="RAG System",
     page_icon="💬",
@@ -28,52 +31,55 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Initializing required variables
 if "query_rewritting_indicator" not in st.session_state:
     st.session_state.query_rewritting_indicator = False
-
 if 'pdfs_loaded'not in st.session_state:
     st.session_state.pdfs_loaded = False
-
-
 if 'chroma_database' not in st.session_state:
     st.session_state.chroma_database = ChromaDatabase(embedding_model=default_embedding_model, distance_metric='cosine')
 
 
-# --- SIDEBAR ---
+# Left side bar - Model & Data interactive management
 with st.sidebar:
-    st.title("💼 Economic Analyst Bot")
-    st.caption("RAG Economic Analyst Assistant")
+    st.title("💼 RAG Economic Analyst Bot")
+    #st.caption("RAG Economic Analyst Assistant")
     
-    # --- Model Settings ---
+    # Model settings
     st.markdown("## ⚙️ Model Settings")
     model_to_use = st.selectbox("Choose a model", MODELS_AVAILABLE, key="selected_model")
     temperature = st.slider("Temperature", 0.1, 2.0, 0.3, 0.1)
     top_k = st.slider("Top K Contexts", 1, 15, 5, 1)
     
-    if st.sidebar.checkbox("Rewrite the Query 5 times"):
+    # Feature to obtain 3 semantically similar queries to the original one
+    if st.sidebar.checkbox("Rewrite the Query 3 times"):
         st.session_state.query_rewritting_indicator = True
 
     st.divider()
 
-    # --- Data Settings ---
+    # Data settings
     st.markdown("## 📂 Data Settings")
     chunk_size = st.slider("Chunk Size", 200, 2000, 800, 100)
     chunk_overlap = st.slider("Chunk Overlap", 0, 200, 50, 5)
 
+    # re-run embeddings, saved in memory, not local
     if st.button("🔄 Re-run Embeddings"):
         st.session_state.chroma_database.erase_chroma_db()
-        add_log(f'Re-running embeddings')
+        add_log(f'Re-running embeddings...')
         
-        add_log(f'Loading PDFs & Financial Statements')
+        add_log(f'Loading PDFs & Financial Statements...')
 
         # only load pdfs once
         if not st.session_state.pdfs_loaded:
-            st.session_state.pdf_docs = load_pdfs(path=PDF_DATA_FOLDER_DIR)
+            st.session_state.pdf_docs = load_pdfs()
             st.session_state.pdfs_loaded = True
+
         add_log(f'Loaded {len(st.session_state.pdf_docs)} pdfs')
+
         add_log(f'Chunking Data...')
         chunks_pdf = pdf_splitter(st.session_state.pdf_docs, chunk_size=chunk_size, chunk_overlap=chunk_overlap)
         add_log(f'Total Chunks {len(chunks_pdf)}')
+
         add_log(f'Embedding chunks...')
         st.session_state.chroma_database.embed_documents(chunks_pdf)
         st.session_state.vector_retriever = VectorRetriever(st.session_state.chroma_database.get_vector_db())
@@ -86,23 +92,23 @@ with st.sidebar:
     st.divider()
     st.markdown("Developed by **Julian Restrepo**")
 
-# --- LAYOUT ---
 col1, col2 = st.columns([2, 1])  # left = chat, right = extra panel
 
 with col1:
-    # --- CHAT HISTORY SETUP ---
+    
+    # chat area
     if "messages" not in st.session_state:
         st.session_state.messages = [
             {"role": "assistant", "content": "Hi! how can I help you today?"}
         ]
 
-    # --- DISPLAY CHAT ---
+    
     for message in st.session_state.messages:
         avatar = "🧠" if message["role"] == "assistant" else "👤"
         with st.chat_message(message["role"], avatar=avatar):
             st.markdown(message["content"])
 
-    # --- RESPONSE GENERATION FUNCTION ---
+    # general function assitant reply
     def generate_response(query, context, fred_data:str=None):
         conversation_history = "\n".join(
             f"{m['role'].capitalize()}: {m['content']}"
@@ -111,19 +117,23 @@ with col1:
         return query_solution(query,context, conversation_history , temperature, model_to_use, fred_data=fred_data)
     
 
-        # --- USER INPUT ---
+    # user input
     if prompt := st.chat_input("Type your question here..."):
         # 1. Store and show user message
         st.session_state.messages.append({"role": "user", "content": prompt})
         with st.chat_message("user", avatar="👤"):
             st.markdown(prompt)
 
+        # As embeddings are saved in-memory, run embeddings once before first run
         if not st.session_state.pdfs_loaded:
             st.session_state.messages.append({"role": "assistant", "content": "Run embeddings once before querying."})
         else:
-        # 2. Generate model reply immediately
+        
+            
             with st.chat_message("assistant", avatar="🧠"):
                 with st.spinner("Thinking..."):
+
+                    
                     if st.session_state.query_rewritting_indicator:
 
                         add_log(f'Processing query...')
@@ -132,10 +142,11 @@ with col1:
                         add_log(f'Queries generated {query_list}')
                         context = st.session_state.vector_retriever.multiple_query(query_list, top_k=top_k)
                         add_log(f'Top {top_k} context were retrieved')
-
+                        add_log(context)
                         fred_data = query_fred_api_needed(prompt)
+                        add_log(fred_data)
                         response = generate_response(prompt, context, fred_data)
-                        #add_log('Query answered')
+
                         placeholder = st.empty()
                         full_response = ""
                         for token in response:
@@ -144,13 +155,15 @@ with col1:
                             sleep(0.01)
                         placeholder.markdown(full_response)
 
+                    # only running 1 query
                     else:
 
                         add_log(f'Processing query...')
                         context = st.session_state.vector_retriever.single_query(prompt, top_k=top_k)
+                        add_log(context)
                         add_log(f'Top {top_k} context were retrieved')
-                        #add_log("\n\n".join([chunk.page_content for chunk in context]))
                         fred_data = query_fred_api_needed(prompt)
+                        add_log(fred_data)
                         response = generate_response(prompt, context, fred_data)
                         add_log('Query answered')
                         placeholder = st.empty()
@@ -162,9 +175,9 @@ with col1:
                         placeholder.markdown(full_response)
 
 
-                # 3. Save assistant message to chat history
+                
                 st.session_state.messages.append({"role": "assistant", "content": full_response})
-        st.rerun()  # refresh the UI to display both messages cleanly
+        st.rerun() 
 
     
 with col2:
@@ -172,11 +185,11 @@ with col2:
     st.header("📊 Testing Area")
     st.write("Summary of logs and back-end processes.")
 
-     # Initialize log storage
+    # log repository
     if "logs" not in st.session_state:
         st.session_state.logs = []
 
-    # Display logs
+    # updating logs
     if st.session_state.logs:
         for entry in st.session_state.logs:  # newest first
             st.markdown(f"**[{entry['time']}]** {entry['message']}")
@@ -184,11 +197,7 @@ with col2:
         st.info("Please run embeddings before making your first query.")
 
 
-
-
-
-
-# --- STYLES ---
+# style settings
 st.markdown("""
 <style>
     .stChatInput textarea {border-radius: 12px !important;}
