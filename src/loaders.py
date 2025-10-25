@@ -6,8 +6,8 @@ import os
 import re
 
 
+"General text cleaning"
 def general_pdf_text_cleaning(document_to_clean: Document):
-
     # text cleaning
     for page in document_to_clean:
         page.page_content = re.sub(r"<[^>]+>|http\S+|www\.\S+|\S+@\S+", " ", page.page_content) # removes html, url and emails
@@ -15,15 +15,15 @@ def general_pdf_text_cleaning(document_to_clean: Document):
         page.page_content = re.sub(r"\s{2,}", " ", page.page_content)
     return document_to_clean
 
-# find all pdfs from data/pdfs folder
+
+"Finds paths to all available pdfs"
 def find_pdfs():
     return [os.path.join(PDF_DATA_FOLDER_DIR, f) for f in os.listdir(PDF_DATA_FOLDER_DIR) if f.lower().endswith(".pdf")]
 
 
+"Loads pdfs and performs general text cleaning"
 def load_pdfs() -> List[Document]:
-
     pdfs_path = find_pdfs()
-
     cleaned_sliced_pdfs = []
     for pdf_file in pdfs_path:
         loader = PyPDFLoader(pdf_file)

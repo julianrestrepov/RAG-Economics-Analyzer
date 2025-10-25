@@ -8,16 +8,19 @@ import json
 
 load_dotenv()
 
+
+"Returns LLM model"
 def get_llm(model: str, temperature: float):
     try:
         return ChatOpenAI(model=model, temperature=temperature)
     except Exception as e:
         print(f'Error connecting to model: {e}')
 
-# LLM to answer user question based on provided information
+
+"LLM to answer user question based on provided information"
 def query_solution(query:str, context:str, conversation_history:str, temperature: float, model: str = default_llm_model, fred_data: str=None):
     query_template = f"""
-        You are an economic analyst
+        You are an economic analyst.
         Use only the available information in <context>, <previous conversations> and <FRED Data> to answer the <User Question>.
         You may synthesize and reason within the available information to explain relationships, comparison or trends. 
         if available information can't answer the question respond "Sorry, my context window doesn't contain this information"
@@ -39,7 +42,6 @@ def query_solution(query:str, context:str, conversation_history:str, temperature
         FRED Data:
         {fred_data}
         """
-
     
     query_input = query_template.format(
             conversation_history=conversation_history,
@@ -57,13 +59,13 @@ def query_solution(query:str, context:str, conversation_history:str, temperature
     except Exception as e:
         print(f"Error querying llm: {e}")
 
-# LLM to rewrite 1 query into x amount of semantically similar versions
+
+"LLM to rewrite 1 query into x amount of semantically similar versions"
 def query_rewritting(query:str, quantity:int = 3, model: str = default_llm_model):
 
     prompt_template = f"""
-    You are a query rewriting assistant. Given a user question, rewrite it into {quantity} semantically similar variations that could retrieve different relevant information from a vector database. 
+    You are a semantic query rewriting system. Given a user question, rewrite it into {quantity} semantically similar variations that could retrieve different relevant information from a vector database. 
     The rewrites should focus on the same meaning but use different wording or phrasing.
-
     Return questions separated exclusively by 1 comma, nothing else.
 
     User query: "{query}"
@@ -78,7 +80,8 @@ def query_rewritting(query:str, quantity:int = 3, model: str = default_llm_model
     except Exception as e:
         print(f"Error querying llm: {e}")
 
-# LLM to determinate if FRED API is required and make request to be provided to Func Query Solution
+
+"LLM to determinate if FRED API is required and builts request to API."
 def query_fred_api_needed(query:str, model: str = default_llm_model):
     prompt = f"""
         You are a routing assistant for an economics RAG system.

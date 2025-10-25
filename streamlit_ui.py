@@ -1,18 +1,18 @@
-import streamlit as st
-from time import sleep
+from dotenv import load_dotenv
+from src.constants import MODELS_AVAILABLE, PDF_DATA_FOLDER_DIR, default_embedding_model
 from src.llm_model import query_solution, query_rewritting, query_fred_api_needed
-from src.loaders import load_pdfs
 from src.data_preprocessing import pdf_splitter
 from src.embedders import ChromaDatabase
 from src.query import VectorRetriever
-from src.constants import MODELS_AVAILABLE, PDF_DATA_FOLDER_DIR, default_embedding_model
-from dotenv import load_dotenv
+from src.loaders import load_pdfs
 from datetime import datetime
+import streamlit as st
+from time import sleep
 
-# Loading API Keys
+# loading api keys
 load_dotenv()
 
-# Add logs to Testing Area
+# Add logs to testing area
 def add_log(message: str):
     timestamp = datetime.now().strftime("%H:%M:%S")
     st.session_state.logs.append({"time": timestamp, "message": message})
@@ -42,18 +42,19 @@ if 'chroma_database' not in st.session_state:
 
 # Left side bar - Model & Data interactive management
 with st.sidebar:
-    st.title("💼 RAG Economic Analyst Bot")
-    #st.caption("RAG Economic Analyst Assistant")
+    st.title("🔍 RAG Economic Analyst Bot")
     
     # Model settings
-    st.markdown("## ⚙️ Model Settings")
+    st.markdown("## ⚙️ Model Settings 🛠️")
     model_to_use = st.selectbox("Choose a model", MODELS_AVAILABLE, key="selected_model")
     temperature = st.slider("Temperature", 0.1, 2.0, 0.3, 0.1)
     top_k = st.slider("Top K Contexts", 1, 15, 5, 1)
     
     # Feature to obtain 3 semantically similar queries to the original one
-    if st.sidebar.checkbox("Rewrite the Query 3 times"):
+    if st.sidebar.checkbox("Query Augmentation"):
         st.session_state.query_rewritting_indicator = True
+
+    st.caption("Generates 3 alternative queries.")
 
     st.divider()
 
@@ -66,7 +67,7 @@ with st.sidebar:
     if st.button("🔄 Re-run Embeddings"):
         st.session_state.chroma_database.erase_chroma_db()
         add_log(f'Re-running embeddings...')
-        
+
         add_log(f'Loading PDFs & Financial Statements...')
 
         # only load pdfs once
@@ -146,6 +147,7 @@ with col1:
                         fred_data = query_fred_api_needed(prompt)
                         add_log(fred_data)
                         response = generate_response(prompt, context, fred_data)
+                        add_log('Query answered')
 
                         placeholder = st.empty()
                         full_response = ""
