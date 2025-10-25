@@ -1,18 +1,21 @@
-📝 Project Overview and Features
+## 📝 Project Overview and Features
 This project consists of a Retrieval-Augmented Generation chatbot build with LangChain and Streamlit for 
 interactive experiementation. It performs retrieval of local PDFs stored in a Chroma vector database
 and integrates live economic data source from the FRED API, allowing for a hybrid retrieval data workflow.
+<br>
+<br>
+## 🚀 Features
 
-🚀 Features
-
-🔍 Retrieval-Augmented Generation
-
+### 🔍 Retrieval-Augmented Generation
+<br>
 Uses Chroma as the vector database to index and retrieve text from locally stored economic reports (PDFs).
-
+<br>
 The FRED API is called when a LLM assistant determines external data is required to answer user's query. LLM can dynamically build the request to the API, ensuring only the required economic data is requested.
 
+<br>
+<br>
 
-🧩 Interactive UI - The UI allows for a experimental usage to understand how parameters affect the system output.
+### 🧩 Interactive UI - The UI allows for a experimental usage to understand how parameters affect the system output.
 
 Switch between different LLM models.
 
@@ -21,12 +24,17 @@ Adjust temperature and top_k chunks retrieved.
 Re-run local embeddings with a different chunk and overlap size.
 
 View back-end logs directly from the testing area.
-
-
-🗣️ Query Augmentation
+<br>
+<br>
+### 🗣️ Query Augmentation
 
 Optional query rewriting feature that generates three semantically similar queries to improve retrieval quality.
 
+<br>
+<br>
 
+## 💻 Application Demo
 
 ![alt text](image.png)
+
+<img width="1900" height="914" alt="image" src="https://github.com/user-attachments/assets/ecb3d67b-d5c0-4a03-8298-2954a7fa2df5" />
