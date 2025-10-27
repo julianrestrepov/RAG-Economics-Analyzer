@@ -30,6 +30,10 @@ View back-end logs directly from the testing area.
 
 Optional query rewriting feature that generates three semantically similar queries to improve retrieval quality.
 
+#### Example of Query Augmentation
+
+<img width="1853" height="538" alt="image" src="https://github.com/user-attachments/assets/e0e25feb-e5b9-4973-a0cf-bce0a349c04e" />
+
 <br>
 <br>
 
@@ -38,6 +42,12 @@ Optional query rewriting feature that generates three semantically similar queri
 
 #### Memory functionality
 <img width="1763" height="656" alt="image" src="https://github.com/user-attachments/assets/eb7cc8d1-fcc8-4e6d-bdc0-94c68295b441" />
-
+<br>
 <img width="1438" height="675" alt="image" src="https://github.com/user-attachments/assets/aff8ca2d-c2b7-414d-9a16-219c88ca2aa6" />
+<br>
+<br>
+
+### Context Printing
+
+<img width="1879" height="826" alt="image" src="https://github.com/user-attachments/assets/09631fc8-b17d-425e-be11-fdf1bef25300" />
 
