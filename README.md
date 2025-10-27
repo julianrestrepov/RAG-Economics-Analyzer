@@ -35,6 +35,11 @@ Optional query rewriting feature that generates three semantically similar queri
 
 ## 💻 Application Demo
 
+<img width="1763" height="656" alt="image" src="https://github.com/user-attachments/assets/eb7cc8d1-fcc8-4e6d-bdc0-94c68295b441" />
+
+<img width="1438" height="675" alt="image" src="https://github.com/user-attachments/assets/aff8ca2d-c2b7-414d-9a16-219c88ca2aa6" />
+
+
 ![alt text](image.png)
 
 <img width="1900" height="914" alt="image" src="https://github.com/user-attachments/assets/ecb3d67b-d5c0-4a03-8298-2954a7fa2df5" />
