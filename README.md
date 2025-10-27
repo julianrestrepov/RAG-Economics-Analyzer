@@ -15,7 +15,7 @@ The FRED API is called when a LLM assistant determines external data is required
 <br>
 <br>
 
-### 🧩 Interactive UI - The UI allows for a experimental usage to understand how parameters affect the system output.
+### 🧮 Interactive UI - The UI allows for a experimental usage to understand how parameters affect the system output.
 
 Switch between different LLM models.
 
