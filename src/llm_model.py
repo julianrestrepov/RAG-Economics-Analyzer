@@ -20,27 +20,23 @@ def get_llm(model: str, temperature: float):
 "LLM to answer user question based on provided information"
 def query_solution(query:str, context:str, conversation_history:str, temperature: float, model: str = default_llm_model, fred_data: str=None):
     query_template = f"""
-        You are an economic analyst.
-        Use only the available information in <context>, <previous conversations> and <FRED Data> to answer the <User Question>.
-        You may synthesize and reason within the available information to explain relationships, comparison or trends. 
-        if available information can't answer the question respond "Sorry, my context window doesn't contain this information"
+            You are an economic analyst.
+            Use only the available information below to answer user question.
+            Use <previous conversations> to understand context of conversation.
+            You may synthesize and reason within the available information to explain relationships, comparison or trends. 
+            if available information can't answer the question respond "Sorry, my context window doesn't contain this information"
 
-        Rules:
-        - Never use outside knowledge
-        - Answer concisely and factually.
-        - Use neutral financial language.
+            Previous Conversations:
+            {conversation_history}
 
-        Previous Conversations:
-        {conversation_history}
+            User Question:
+            {query}
 
-        User Question:
-        {query}
+            Context:
+            {context}
 
-        Context:
-        {context}
-
-        FRED Data:
-        {fred_data}
+            FRED Data:
+            {fred_data}
         """
     
     query_input = query_template.format(
@@ -118,7 +114,8 @@ def query_fred_api_needed(query:str, model: str = default_llm_model):
             return fred_data_string
         
         else:
-            return False
+            print("JULIAN RES")
+            return "Not Required"
 
     except Exception as e:
         print(f"Error querying llm: {e}")

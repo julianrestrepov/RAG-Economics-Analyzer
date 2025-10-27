@@ -12,7 +12,7 @@ Uses Chroma as the vector database to index and retrieve text from locally store
 The FRED API is called when a LLM assistant determines external data is required to answer user's query. LLM can dynamically build the request to the API, ensuring only the required economic data is requested.
 
 
-🧩 Interactive UI - The UI allows for a experimental usage to understand how parameters affect the system output.
+🧮 Interactive UI - The UI allows for a experimental usage to understand how parameters affect the system output.
 
 Switch between different LLM models.
 
@@ -23,7 +23,7 @@ Re-run local embeddings with a different chunk and overlap size.
 View back-end logs directly from the testing area.
 
 
-🗣️ Query Augmentation
+🎛️ Query Augmentation
 
 Optional query rewriting feature that generates three semantically similar queries to improve retrieval quality.
 

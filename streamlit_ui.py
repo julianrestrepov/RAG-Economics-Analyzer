@@ -34,6 +34,8 @@ st.set_page_config(
 # Initializing required variables
 if "query_rewritting_indicator" not in st.session_state:
     st.session_state.query_rewritting_indicator = False
+if "print_chunks_retrieved" not in st.session_state:
+    st.session_state.print_chunks_retrieved = False
 if 'pdfs_loaded'not in st.session_state:
     st.session_state.pdfs_loaded = False
 if 'chroma_database' not in st.session_state:
@@ -53,8 +55,9 @@ with st.sidebar:
     # Feature to obtain 3 semantically similar queries to the original one
     if st.sidebar.checkbox("Query Augmentation"):
         st.session_state.query_rewritting_indicator = True
-
     st.caption("Generates 3 alternative queries.")
+
+
 
     st.divider()
 
@@ -113,7 +116,7 @@ with col1:
     def generate_response(query, context, fred_data:str=None):
         conversation_history = "\n".join(
             f"{m['role'].capitalize()}: {m['content']}"
-            for m in st.session_state.messages
+            for m in st.session_state.messages[-3:]
         )
         return query_solution(query,context, conversation_history , temperature, model_to_use, fred_data=fred_data)
     
@@ -140,12 +143,13 @@ with col1:
                         add_log(f'Processing query...')
                         add_log(f'Requerying query')
                         query_list = query_rewritting(prompt)
-                        add_log(f'Queries generated {query_list}')
+                        add_log(f'Queries generated:  \n {query_list}')
                         context = st.session_state.vector_retriever.multiple_query(query_list, top_k=top_k)
                         add_log(f'Top {top_k} context were retrieved')
-                        add_log(context)
                         fred_data = query_fred_api_needed(prompt)
-                        add_log(fred_data)
+                        if st.session_state.print_chunks_retrieved:
+                            add_log(F'Context Window: \n {context}')
+                            add_log(F'FRED API Data: \n {fred_data}')
                         response = generate_response(prompt, context, fred_data)
                         add_log('Query answered')
 
@@ -162,10 +166,11 @@ with col1:
 
                         add_log(f'Processing query...')
                         context = st.session_state.vector_retriever.single_query(prompt, top_k=top_k)
-                        add_log(context)
                         add_log(f'Top {top_k} context were retrieved')
                         fred_data = query_fred_api_needed(prompt)
-                        add_log(fred_data)
+                        if st.session_state.print_chunks_retrieved:
+                            add_log(F'Context Window: \n {context}')
+                            add_log(F'FRED API Data: \n {fred_data}')
                         response = generate_response(prompt, context, fred_data)
                         add_log('Query answered')
                         placeholder = st.empty()
@@ -185,7 +190,11 @@ with col1:
 with col2:
     
     st.header("📊 Testing Area")
+    
     st.write("Summary of logs and back-end processes.")
+
+    st.session_state.print_chunks_retrieved = st.checkbox("Print Context?")
+    st.divider()
 
     # log repository
     if "logs" not in st.session_state:

@@ -1,7 +1,7 @@
 import os
 
 
-default_llm_model = 'gpt-4o-mini'
+default_llm_model = 'gpt-4-turbo'
 MODELS_AVAILABLE = ['gpt-4o-mini', 'gpt-4-turbo', 'gpt-4']
 default_embedding_model = 'text-embedding-3-small'
 
