@@ -2,7 +2,7 @@ import os
 
 
 default_llm_model = 'gpt-4'
-MODELS_AVAILABLE = ['gpt-4o-mini', 'gpt-4-turbo', 'gpt-4']
+MODELS_AVAILABLE = ['gpt-4', 'gpt-4o-mini', 'gpt-4-turbo']
 default_embedding_model = 'text-embedding-3-small'
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
