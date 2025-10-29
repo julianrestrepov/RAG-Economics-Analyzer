@@ -12,52 +12,12 @@
     "ground_truth": "Older workers (ages 55 and older) are particularly vulnerable, as historical evidence suggests that they are less likely to adapt to new technologies and transition to new occupations (Autor and Dorn 2009)."
   },
   {
-    "question": "Hows the economy doing in the Second Federal Reserve District, and whats holding companies back?",
-    "ground_truth": "Economic activity in the Second District continued to decline slightly, and the main factor weighing on businesses was tariff-related uncertainty."
-  },
-  {
-    "question": "Which industries in the Second District got the biggest pay raises recently?",
-    "ground_truth": "Firms in construction and in leisure and hospitality saw strong growth in wages."
-  },
-  {
-    "question": "Why did a European stainless steel importer make customers pay for the full cost of tariffs?",
-    "ground_truth": "The importer of European stainless steel passed on the full cost of the tariffs to customers because there were no alternative domestic suppliers."
-  },
-  {
     "question": "Why is keeping the CUSMA deal so important for both Canada and the U.S.?",
     "ground_truth": "CUSMA protects most Canadian exports from U.S. tariffs and keeps import costs for U.S. firms from rising further, providing mutual benefits to both countries."
   },
   {
-    "question": "When are Canada, the U.S., and Mexico planning to talk about extending CUSMA past 2036?",
-    "ground_truth": "Negotiations to extend CUSMA beyond its current 2036 expiry are set to start no later than 2026."
-  },
-  {
-    "question": "What happened to Canadas inflation in June 2025 after the carbon tax was removed?",
-    "ground_truth": "Headline CPI inflation was 1.9% in June 2025, pulled down by the removal of the consumer carbon tax."
-  },
-  {
-    "question": "What made inflation go up in 2025 once you take out the effects of taxes?",
-    "ground_truth": "The increase was mainly due to higher prices for non-energy goods, caused by the depreciation of the Canadian dollar and past increases in import and shipping costs."
-  },
-  {
     "question": "How did gas and energy prices change after Canada got rid of the carbon tax?",
     "ground_truth": "Energy price inflation fell sharply to -9.5% in June following the removal of the consumer carbon tax."
-  },
-  {
-    "question": "Where did core inflation land in 2025?",
-    "ground_truth": "Core inflation measures rose to between 2.5% and 3.0%, with underlying inflation estimated around 2.5%."
-  },
-  {
-    "question": "How are Canadian companies saying trade changes are affecting them?",
-    "ground_truth": "Businesses reported that adapting to new trade conditions increased their operational costs, contributing to upward pressure on prices."
-  },
-  {
-    "question": "In the Bank of Canadas outlook, whats assumed about tariffs?",
-    "ground_truth": "Tariffs are assumed to be permanent, reducing productivity and investment, with half of the revenues remitted to affected businesses and the rest redistributed to households."
-  },
-  {
-    "question": "How does the government plan to use the money from tariffs in Canada?",
-    "ground_truth": "Half of Canadian tariff revenues are given to affected businesses, and the remaining half are redistributed to households."
   },
   {
     "question": "How soon are U.S. tariffs expected to show up in consumer prices?",
@@ -120,24 +80,8 @@
     "ground_truth": "Population aging slows growth by reducing labor supply and raises fiscal pressures through higher spending on pensions, health care, and long-term care as the old-age dependency ratio increases."
   },
   {
-    "question": "Why does living longer usually mean lower interest rates over time?",
-    "ground_truth": "Longer lifespans raise savings as individuals plan for longer retirements, while smaller workforces reduce investment needs, jointly lowering equilibrium interest rates."
-  },
-  {
-    "question": "How does aging affect how much and how well people can work?",
-    "ground_truth": "Physiological aging independently influences how long and how effectively people work; healthier aging can raise labor participation and productivity even at older chronological ages."
-  },
-  {
     "question": "Why can different aging speeds across countries create global opportunities?",
     "ground_truth": "It enables capital to flow from older, high-savings economies to younger, capital-scarce ones, and encourages labor migration in the opposite direction, improving global efficiency."
-  },
-  {
-    "question": "Whats the difference between the effective and official retirement ages?",
-    "ground_truth": "The median effective retirement age in advanced economies is about 2.5 years below the statutory level, with variation linked to pension generosity, health, and labor policies."
-  },
-  {
-    "question": "Why does the study use an overlapping-generations model?",
-    "ground_truth": "It assesses how demographic changes affect growth, savings, interest rates, and global financial balances across advanced, emerging, and low-income economies."
   },
   {
     "question": "How can immigration help offset the challenges of an aging population in rich countries?",
@@ -170,9 +114,5 @@
   {
     "question": "What kind of pollution came from making nuclear weapons?",
     "ground_truth": "Contamination of soil, surface water, or groundwater occurred due to the production, storage, and use of radioactive materials and hazardous chemicals."
-  },
-  {
-    "question": "Why arent some cleanup costs for old DOE nuclear sites included in their liability numbers?",
-    "ground_truth": "Sites with no current feasible remediation approaches have their estimated cleanup costs excluded, though stewardship and monitoring costs are included."
   }
 ]

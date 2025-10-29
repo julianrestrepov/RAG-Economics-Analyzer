@@ -2,6 +2,7 @@ from dotenv import load_dotenv
 from src.constants import MODELS_AVAILABLE, PDF_DATA_FOLDER_DIR, default_embedding_model
 from src.llm_model import query_solution, query_rewritting, query_fred_api_needed
 from src.data_preprocessing import pdf_splitter
+from src.evaluator_ragas import evaluate_model
 from src.embedders import ChromaDatabase
 from src.query import VectorRetriever
 from src.loaders import load_pdfs
@@ -118,7 +119,7 @@ with col1:
             f"{m['role'].capitalize()}: {m['content']}"
             for m in st.session_state.messages[-3:]
         )
-        return query_solution(query,context, conversation_history , temperature, model_to_use, fred_data=fred_data)
+        return query_solution(query,context, temperature, model_to_use,conversation_history=conversation_history, fred_data=fred_data)
     
 
     # user input
@@ -192,7 +193,21 @@ with col2:
     st.header("📊 Testing Area")
     
     st.write("Summary of logs and back-end processes.")
+    questions_to_test = st.selectbox("How many questions to test: ", [5, 10, 15], key="questions_to_test")
 
+    if st.button("🎯 Run Ragas Evaluation"):
+        
+        if not st.session_state.vector_retriever:
+            st.info("Please run embeddings before making your first query.")
+        else:
+            results_ragas = evaluate_model(st.session_state.vector_retriever, top_k, model_to_use, temperature)
+            add_log("Evaluation Results: ")
+            add_log(f'Context Recall: {results_ragas['context_recall']:.2f}')
+            add_log(f'Context Precision: {results_ragas['context_precision']:.2f}')
+            add_log(f'Faithfulness: {results_ragas['faithfulness']:.2f}')
+            add_log(f'Answer Relevancy: {results_ragas['answer_relevancy']:.2f}')
+        
+    st.divider()
     st.session_state.print_chunks_retrieved = st.checkbox("Print Context?")
     st.divider()
 

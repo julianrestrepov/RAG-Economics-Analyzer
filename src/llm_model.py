@@ -14,11 +14,11 @@ def get_llm(model: str, temperature: float):
     try:
         return ChatOpenAI(model=model, temperature=temperature)
     except Exception as e:
-        print(f'Error connecting to model: {e}')
+        pass
 
 
 "LLM to answer user question based on provided information"
-def query_solution(query:str, context:str, conversation_history:str, temperature: float, model: str = default_llm_model, fred_data: str=None):
+def query_solution(query:str, context:str, temperature: float, model: str = default_llm_model,conversation_history:str = '', fred_data: str=None):
     query_template = f"""
             You are an economic analyst.
             Use only the available information below to answer user question.
@@ -49,11 +49,10 @@ def query_solution(query:str, context:str, conversation_history:str, temperature
     try:
         llm = get_llm(model, temperature)
         response = llm.invoke(query_input)
-        print("PROMPT: ", query_input, "\n\n")
         return response.content
 
     except Exception as e:
-        print(f"Error querying llm: {e}")
+        pass
 
 
 "LLM to rewrite 1 query into x amount of semantically similar versions"
@@ -74,7 +73,7 @@ def query_rewritting(query:str, quantity:int = 3, model: str = default_llm_model
         return response.content.split(',')
 
     except Exception as e:
-        print(f"Error querying llm: {e}")
+        pass
 
 
 "LLM to determinate if FRED API is required and builts request to API."
@@ -114,8 +113,7 @@ def query_fred_api_needed(query:str, model: str = default_llm_model):
             return fred_data_string
         
         else:
-            print("JULIAN RES")
             return "Not Required"
 
     except Exception as e:
-        print(f"Error querying llm: {e}")
+        pass

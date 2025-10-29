@@ -11,10 +11,11 @@ class VectorRetriever:
         self.vector_db = vector_db
 
     "Returns top_k most relevant chunks for a single query."
-    def single_query(self, query, top_k):
+    def single_query(self, query, top_k, return_list=False):
         context_retrieved_documents_list = self.vector_db.similarity_search(query=query, k=top_k)
-        context_list = [chunk.page_content for chunk in context_retrieved_documents_list]
-        context = "\n\n".join(context_list)
+        context = [chunk.page_content for chunk in context_retrieved_documents_list]
+        if not return_list:
+            context = "\n\n".join(context)
         return context
 
     "Returns top_k most relevant chunks between a group of queries."
