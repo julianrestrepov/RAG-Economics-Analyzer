@@ -13,10 +13,10 @@ from src.llm_model import query_solution
 load_dotenv()
 
 
-def evaluate_model(retriever: VectorRetriever, top_k, model, temperature:float, questions_to_test):
+def evaluate_model(retriever: VectorRetriever, top_k, model, temperature:float):
     print(f"Running RAGAS Evaluation with:  \n temp:{temperature} \n model:{model} \n top_k:{top_k}")
 
-    test_data = load_test_data(questions_to_test=questions_to_test)
+    test_data = load_test_data()
     results_input = []
     for i, test_item in enumerate(test_data):
         print(f"Testing #{i}: ")
