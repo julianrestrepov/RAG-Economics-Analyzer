@@ -193,7 +193,7 @@ with col2:
     st.header("📊 Testing Area")
     
     st.write("Summary of logs and back-end processes.")
-    questions_to_test = st.selectbox("How many questions to test: ", [5, 10, 15], key="questions_to_test")
+    #questions_to_test = st.selectbox("How many questions to test: ", [5, 10, 15], key="questions_to_test")
 
     if st.button("🎯 Run Ragas Evaluation"):
         
