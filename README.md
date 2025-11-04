@@ -27,7 +27,7 @@ View back-end logs directly from the testing area.
 <br>
 <br>
 
-### ✅ Live Ragas Evaluation
+### ✅ Live RAGAS Evaluation
 
 User can run a RAGAS evaluation on different embeddings settings to quantitatively measure model performance.
 <br>
