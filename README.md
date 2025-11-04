@@ -26,6 +26,12 @@ Re-run local embeddings with a different chunk and overlap size.
 View back-end logs directly from the testing area.
 <br>
 <br>
+
+### ✅ Live Ragas Evaluation
+
+User can run a RAGAS evaluation on different embeddings settings to quantitatively measure model performance.
+<br>
+<br>
 ### 🗣️ Query Augmentation
 
 Optional query rewriting feature that generates three semantically similar queries to improve retrieval quality.
